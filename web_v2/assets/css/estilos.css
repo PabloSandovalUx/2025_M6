@@ -1,0 +1,25 @@
+body{
+    background-color:  rgb(46, 26, 32);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    font-family: "Kablammo", system-ui;
+    font-size: 80px;
+    text-align: center;
+}
+
+h3{
+    font-size: 60px;
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+p{
+    font-size: 24px;
+    font-weight: 300;
+    columns: 3;
+    gap: 20px;
+    margin: 0;
+}

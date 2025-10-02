@@ -1,0 +1,50 @@
+body{
+    background-color: grey;
+    color: blue;
+}
+
+header{
+    background-color: red;
+}
+
+section{
+    background-color: rgb(105, 46, 46);
+    color: yellow;
+}
+
+article{
+    background-color: lightseagreen;
+    width: 40%;
+    display: inline-block;
+}
+
+h2{
+    background-color: darkred;
+    color: white;
+}
+
+h3{
+    background-color: darkcyan;
+}
+
+a{
+    background-color: yellow;
+}
+
+p{
+    background-color: aqua;
+    color: blue;
+}
+
+footer{
+    background-color: #2b53c8;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+}

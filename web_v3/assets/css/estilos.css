@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #181818;
+    color: red;
+}
+
+section{
+    margin: 10%;
+    margin-bottom: 0;
+}
+
+article{ 
+    width: 48%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.textoDerecha{
+    padding-right: 60px;
+}
+.textoIzquierda{
+    padding-left: 60px;
+}
+
+img{
+    width: 100%;
+}
+
+h2{
+    color: white;
+    margin-bottom: 20px;
+}
+
+p{
+    margin-bottom: 30px;
+}
