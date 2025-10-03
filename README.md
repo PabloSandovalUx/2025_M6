@@ -16,4 +16,9 @@ Estructura base de 2 columnas
 - [x] Estructura base en HTML
 - [x] Estilos CSS
 
+## ✅ [web_v4](./web_v4) 
+Estructura de un Card
+- [x] Estructura en HTML
+- [x] Trabajo con nombres de clases en CSS
+
 <!-- ✅ 🟨 -->
