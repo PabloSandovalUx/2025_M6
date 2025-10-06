@@ -10,6 +10,7 @@ html {
 
 body{
     background-color: #0e0e0e;
+    background: linear-gradient(to bottom,#4b6cb7, #182848);
 }
 
 header{
@@ -39,12 +40,7 @@ header{
     font-size: 18px;
 }
 
-.serviciosDisponibles{
-    background-color: red;
-    height: 800px;
-}
-
-.sectionDisponibles{
+.sectionDisponibles, .serviciosDisponibles{
     width: 80%;
     margin-left: 10%;
     padding-top: 80px;
@@ -55,6 +51,41 @@ header{
     font-size: 40px;
     text-transform: uppercase;
     margin-bottom: 40px;
+}
+
+.SD_fila{
+    margin-bottom: 20px;
+}
+
+.SD_fila_contImg, .SD_fila_contTexto{
+    display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+}
+
+.SD_fila_contTexto{
+    color: white;
+}
+
+.justificarIzq .SD_fila_contTexto{
+    text-align: left;
+    margin-left: 8%;
+}
+
+.justificarDer .SD_fila_contTexto{
+    text-align: right;
+    margin-right: 8%;
+}
+
+.SD_fila_contTexto h4{
+    color: red;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.SD_fila_contTexto p{
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .card{
@@ -135,4 +166,17 @@ img{
 .contenedorTarjeta{
     width: 32px;
     margin-left: 20px;
+}
+
+footer{
+    background-color: white;
+    padding: 30px;
+    text-align: right;
+    margin-top: 60px;
+}
+
+footer b{
+    color: red;
+    font-size: 18px;
+    text-transform: uppercase;
 }
