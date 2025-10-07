@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.card{
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    width: 25%;
+}
+
+.cardXL{
+    width: 50%;
+}
+
+article:nth-child(even){
+    background-color: darkred;
+}
+
+@media (max-width: 768px) {
+    body{
+        background-color: darkgreen;
+    }
+    .card{
+        width: 50%;
+        background-color: gold;
+    }
+
+    .cardXL{
+        width: 100%;
+    }
+
+    article:nth-child(even){
+        background-color: darkgoldenrod;
+    }
+}
+
+@media (max-width: 576px) {
+    body{
+        background-color: darkcyan;
+    }
+    section{
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .card, .cardXL{
+        width: 100%;
+        background-color: blue;
+    }
+
+    article:nth-child(even){
+        background-color: darkblue;
+    }
+
+    .cardXL{
+        display: none;
+    }
+}
