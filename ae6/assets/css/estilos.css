@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    width: 100%;
+    transition: width .4s ease-out, margin .4s ease-out;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 15px 40px;
+}
+
+.logo {
+    color: white;
+    border: 1px solid white;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.navBotones {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+}
+
+.navBotones li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: color .2s ease-out;
+}
+
+.navBotones li a:hover {
+    color: #1580c9;
+}
+
+.hamburguesa{
+    display: none;
+}
+
+.hamburguesa svg{
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: url("../img/heros.png");
+    background-position-y: bottom;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.heroTextos {
+    width: 100%;
+    padding: 60px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.heroTextos h1 {
+    width: 40%;
+    font-size: 45px;
+}
+
+.heroTextos p {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 150px;
+}
+
+.btn svg {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(21, 128, 201);
+    border-radius: 50%;
+    margin-left: 10px;
+    color: white;
+}
+
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 80px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.nosotrosImg,
+.nosotrosTxt {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nosotrosImgSup,
+.nosotrosImgInf {
+    display: flex;
+    gap: 20px;
+    height: 200px;
+}
+
+.tituloSección {
+    background-color: #1580c9;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.nosotrosImgSupImg,
+.nosotrosImgInfImg {
+    flex: 1;
+    overflow: hidden;
+}
+
+.nosotrosTxt {
+    justify-content: space-evenly;
+}
+
+.nosotrosTxt h3 {
+    font-size: 24px;
+}
+
+.productos {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 80px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.productosTitulo {
+    height: 150px;
+}
+
+.productosTitulo .tituloSección {
+    height: 100%;
+}
+
+.productosContCard {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.productosCard {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.productosCardTxt {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.productosCardTxt h4 {
+    font-size: 20px;
+}
+
+.prensa {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+    margin-top: 80px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 80px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.contactoTitulo {
+    height: 150px;
+}
+
+.contactoTitulo .tituloSección {
+    height: 100%;
+}
+
+.contactoContCard {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.contactoCard {
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contactoGrupo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contactoGrupoFila {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contactoGrupoFila a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.contactoCard .btn {
+    margin-top: 30px;
+    box-shadow: none;
+}
+
+.contactoMapa {
+    flex: 3;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px;
+    width: 100%;
+    padding: 30px 10%;
+    background-color: #313131;
+    margin-top: 80px;
+}
+
+footer .logo {
+    color: white;
+    border: 1px solid white;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.footerColumnas {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+footer .navBotones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 50px;
+    padding-left: 30px;
+}
+
+footer .navBotones:nth-child(2) {
+    border-left: 2px solid #9f9e9e;
+}
+
+footer .navBotones li a {
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        background-position-y: top;
+        background-position-x: right;
+        background-size: 60%;
+    }
+
+    .nosotrosImgSup,
+    .nosotrosImgInf {
+        height: 150px;
+    }
+
+    .productos {
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .productosTitulo {
+        height: 150px;
+    }
+
+    .productosContCard {
+        width: 100%;
+        overflow-x: scroll;
+        padding-bottom: 20px;
+    }
+
+    .contactoCard {
+        width: 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hamburguesa{
+        display: block;
+    }
+
+    header .navBotones{
+        display: none;
+    }
+
+    .hero {
+        background-size: 80%;
+        background-position-y: bottom;
+    }
+
+    .heroTextos {
+        padding: 20px;
+        padding-top: 90px;
+    }
+
+    .heroTextos h1 {
+        width: 70%;
+        font-size: 30px;
+    }
+
+    .heroTextos p {
+        margin-bottom: 20px;
+    }
+
+    .nosotros{
+        flex-direction: column;
+    }
+
+    .productos{
+        flex-direction: column;
+    }
+
+    .prensa{
+        flex-direction: column-reverse;
+    }
+
+    .contacto{
+        flex-direction: column;
+    }
+    .contactoContCard{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contactoCard{
+        width: 100%;
+    }
+
+    .contactoMapa iframe{
+        height: 300px;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: start;
+        gap: 30px;
+    }
+
+    .footerColumnas{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footerColumnas .navBotones:nth-child(2){
+        padding-top: 20px;
+        border: 0;
+        border-top: 2px solid #9f9e9e;
+    }
+}
+
+@media (min-width: 1390px) {
+    .hero{
+        background-size: 60%;
+    }
+
+    .heroTextos{
+        padding-left: 20%;
+    }
+
+    .heroTextos h1{
+        width: 40%;
+        font-size: 60px;
+    }
+}

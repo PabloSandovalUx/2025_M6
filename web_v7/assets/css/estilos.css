@@ -212,10 +212,10 @@ header {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.banner1{
+.banner1 {
     background: url("../img/banner1.png") var(--colorPrincipal);
     background-size: 40%;
     background-repeat: no-repeat;
@@ -223,29 +223,30 @@ header {
     background-blend-mode: overlay;
 }
 
-.banner2{
+.banner2 {
     background: url("../img/banner2.png") grey;
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: 150% bottom;
 }
 
-.contenedorTextoBanner{
+.contenedorTextoBanner {
     display: flex;
     flex-direction: column;
     gap: 10px;
     color: white;
 }
 
-.contenedorTextoBanner h3{
+.contenedorTextoBanner h3 {
     font-size: 24px;
 }
 
-.contenedorTextoBanner p{
+.contenedorTextoBanner p {
     font-weight: 300;
 }
 
-.banner1 a, .banner2 a{
+.banner1 a,
+.banner2 a {
     background-color: white;
     padding: 10px 0;
     border-radius: 5px;
@@ -255,72 +256,76 @@ header {
     text-decoration: none;
 }
 
-.banner2 a{
+.banner2 a {
     width: 70%;
 }
 
-@media (max-width: 768px){
-    header{
+@media (max-width: 768px) {
+    header {
         width: 30%;
     }
-    .contenedor{
+
+    .contenedor {
         width: 70%;
         margin-left: 30%;
     }
-    .seccion1{
+
+    .seccion1 {
         flex-direction: column;
         gap: 45px;
     }
 
-    .articleMapa, .articleRanking{
+    .articleMapa,
+    .articleRanking {
         width: 100%;
     }
 
-    .contenedorMapa{
+    .contenedorMapa {
         height: 300px;
     }
 }
-@media (max-width: 576px){
-    header{
+
+@media (max-width: 576px) {
+    header {
         width: 20%;
     }
 
-    .contenedor{
+    .contenedor {
         width: 80%;
         margin-left: 20%;
         padding: 20px;
     }
 
-    .contenedorMapa{
+    .contenedorMapa {
         height: 200px;
     }
 
-    .listadoHeader{
+    .listadoHeader {
         padding: 0;
     }
 
-    .filaHeader{
+    .filaHeader {
         padding: 5px 0;
         justify-content: center;
     }
 
-    .filaHeader p{
+    .filaHeader p {
         display: none;
     }
 
-    .cardVendedor{
+    .cardVendedor {
         flex-wrap: wrap;
     }
 
-    .vendedorBtn{
+    .vendedorBtn {
         width: 100%;
     }
 
-    .vendedorBtn p{
+    .vendedorBtn p {
         text-align: center;
     }
 
-    .seccion2{
+    .seccion2 {
         flex-direction: column;
     }
 }
