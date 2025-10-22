@@ -1,6 +1,6 @@
 :root{
-    --colorPrincipal: #ff7e38;
-    --colorSecundario: #5ff45a;
+    --colorPrincipal: #ffc438;
+    --colorSecundario: #0085d3;
 }
 
 .heroText h3{
@@ -30,9 +30,14 @@
     color: var(--colorPrincipal);
 }
 
-.border-pincipal{
+.border-principal{
     border: 1px solid var(--colorPrincipal);
 }
+
+.progress-bar{
+    background-color: var(--colorPrincipal);
+}
+
 /* PANTALLAS MEDIANAS */
 @media (min-width: 768px){
     .heroText h1{
