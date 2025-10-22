@@ -1,0 +1,48 @@
+:root{
+    --colorPrincipal: #ff7e38;
+    --colorSecundario: #5ff45a;
+}
+
+.heroText h3{
+    font-size: 20px;
+}
+
+.heroText h2{
+    color: var(--colorSecundario);
+    font-size: 26px;
+}
+
+.heroText h1{
+    color: var(--colorPrincipal);
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.ms-10{
+    margin-left: 10vw;
+}
+
+.bg-principal{
+    background-color: var(--colorPrincipal);
+}
+
+.texto-principal{
+    color: var(--colorPrincipal);
+}
+
+.border-pincipal{
+    border: 1px solid var(--colorPrincipal);
+}
+/* PANTALLAS MEDIANAS */
+@media (min-width: 768px){
+    .heroText h1{
+        font-size: 50px;
+    }
+}
+
+/* PANTALLAS GRANDES */
+@media (min-width: 992px){
+    .heroText h1{
+        font-size: 100px;
+    }
+}
