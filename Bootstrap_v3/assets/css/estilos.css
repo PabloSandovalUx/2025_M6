@@ -1,6 +1,19 @@
 :root{
     --colorPrincipal: #ffc438;
+    --colorPrincipalOscuro: #d5a128;
     --colorSecundario: #0085d3;
+}
+
+.bg-blanco{
+    background-color: white;
+}
+
+.navbar-nav .nav-link.active{
+    color: var(--colorSecundario);
+}
+
+.nav-link:hover{
+    color: var(--colorPrincipal);
 }
 
 .heroText h3{
@@ -14,7 +27,7 @@
 
 .heroText h1{
     color: var(--colorPrincipal);
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 700;
 }
 
@@ -22,8 +35,53 @@
     margin-left: 10vw;
 }
 
+.btn-principal{
+    background-color: var(--colorPrincipal);
+    padding: 5px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    text-align: center;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: all .3s ease-out;
+}
+
+.btn-principal:hover{
+    background-color: var(--colorSecundario);
+    color: white;
+}
+
+.btn-outline-principal{
+    border: 1px solid var(--colorPrincipal);
+    padding: 5px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    text-align: center;
+    color: var(--colorPrincipal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-out;
+    gap: 10px;
+}
+
+.btn-outline-principal:hover{
+    border: 1px solid var(--colorSecundario);
+    color: var(--colorSecundario);
+}
+
+.btnXS{
+    padding: 5px 10px;
+}
+
 .bg-principal{
     background-color: var(--colorPrincipal);
+}
+.bg-secundario{
+    background-color: var(--colorSecundario);
 }
 
 .texto-principal{
@@ -36,6 +94,15 @@
 
 .progress-bar{
     background-color: var(--colorPrincipal);
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
 }
 
 /* PANTALLAS MEDIANAS */

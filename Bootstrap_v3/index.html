@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-blanco position-fixed w-100 shadow">
             <div class="container">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -44,14 +44,14 @@
                             <a class="nav-link" href="#">Link</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn rounded-pill btn-warning" href="#">Botón</a>
+                            <a class="btn-principal btnXS" href="#">Botón</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <section class="container">
+    <section class="container pt-5">
         <!-- hero section -->
         <div class="row justify-content-center">
             <article class="col-10 col-md-6 col-lg-7 p-5 heroText">
@@ -62,10 +62,9 @@
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod maxime ullam veritatis beatae libero
                     dolorum est perferendis saepe atque tempore accusamus et mollitia sint harum corporis rem
                     voluptatem, pariatur nulla.</p>
-                <div>
-                    <a href="" class="btn rounded-pill px-4 bg-principal">Contratame</a>
-                    <a href="" class="btn rounded-pill px-4 border-principal texto-principal"><i
-                            class="bi bi-download"></i> Descargar CV</a>
+                <div class="d-flex flex-column flex-lg-row gap-3">
+                    <a href="" class="btn-principal">Contratame</a>
+                    <a href="" class="btn-outline-principal"><i class="bi bi-download"></i> Descargar CV</a>
                 </div>
             </article>
             <article class="col-10 col-md-6 col-lg-5 p-5 d-flex align-items-center">
@@ -96,7 +95,7 @@
     </section>
 
     <!-- section sobre mi -->
-    <section class="container">
+    <section class="container mt-5">
         <div class="row justify-content-center align-items-center">
             <article class="col-10 col-md-5 col-lg-5 p-5 order-2 order-md-1">
                 <img class="img-fluid" src="assets/img/seccionImg.png" alt="">
@@ -165,7 +164,7 @@
     </section>
 
     <!-- section contacto -->
-    <section class="container">
+    <section class="container mt-5">
         <div class="row justify-content-center align-items-center">
             <!-- textos -->
             <article class="col-10 col-md-6">
@@ -191,7 +190,7 @@
                         <label for="mensaje" class="form-label">Mensaje *</label>
                         <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn bg-principal rounded-pill px-4">
+                    <button type="submit" class="btn-principal">
                         ENVIAR
                     </button>
                 </form>
@@ -199,7 +198,36 @@
         </div>
     </section>
 
-    <footer class="mt-5 p-5 bg-principal"></footer>
+    <footer class="container-fluid p-0">
+        <!-- fondo azul -->
+        <section class="bg-secundario">
+            <div class="container d-flex flex-column flex-lg-row">
+                <article>
+                    <a href="#">NAVBAR</a>
+                </article>
+                <article class="d-flex flex-column mx-auto">
+                    <!-- link -->
+                    <ul class="d-flex flex-column flex-md-row justify-content-center gap-4">
+                        <li><a href="">LINK 1</a></li>
+                        <li><a href="">LINK 2</a></li>
+                        <li><a href="">LINK 3</a></li>
+                        <li><a href="">LINK 4</a></li>
+                        <li><a href="">LINK 5</a></li>
+                    </ul>
+                    <!-- iconos -->
+                    <ul class="d-flex flex-row justify-content-center gap-4">
+                        <li><a href=""><i class="bi bi-">ic</i></a></li>
+                        <li><a href=""><i class="bi bi-">ic</i></a></li>
+                        <li><a href=""><i class="bi bi-">ic</i></a></li>
+                        <li><a href=""><i class="bi bi-">ic</i></a></li>
+                        <li><a href=""><i class="bi bi-">ic</i></a></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <!-- fondo amarillo -->
+        <section class="bg-principal p-5"></section>
+    </footer>
 
 
     <!-- Js de Bootstrap -->
