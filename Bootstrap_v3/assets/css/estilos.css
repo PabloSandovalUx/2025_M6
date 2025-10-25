@@ -2,10 +2,31 @@
     --colorPrincipal: #ffc438;
     --colorPrincipalOscuro: #d5a128;
     --colorSecundario: #0085d3;
+    --colorBlanco: white;
+    --colorNegro: #1f1f1f;
+}
+
+:root .modoOscuro {
+    --colorBlanco: #1f1f1f;
+    --colorNegro: rgb(243, 243, 243);
+}
+
+body{
+    background-color: var(--colorBlanco);
+    color: var(--colorNegro);
 }
 
 .bg-blanco{
-    background-color: white;
+    background-color: var(--colorBlanco);
+}
+
+.navbar-brand{
+    color: var(--colorNegro);
+    width: 50px;
+}
+
+.nav-link{
+    color: var(--colorNegro);
 }
 
 .navbar-nav .nav-link.active{
@@ -14,6 +35,10 @@
 
 .nav-link:hover{
     color: var(--colorPrincipal);
+}
+
+.navbar-toggler{
+    background-color: white;
 }
 
 .heroText h3{
@@ -41,7 +66,7 @@
     text-decoration: none;
     border-radius: 50px;
     text-align: center;
-    color: black;
+    color: var(--colorNegro);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,7 +76,7 @@
 
 .btn-principal:hover{
     background-color: var(--colorSecundario);
-    color: white;
+    color: var(--colorBlanco);
 }
 
 .btn-outline-principal{
@@ -88,8 +113,16 @@
     color: var(--colorPrincipal);
 }
 
+.texto-secundario{
+    color: var(--colorSecundario);
+}
+
 .border-principal{
     border: 1px solid var(--colorPrincipal);
+}
+
+.contenedorRRSS a{
+    color: var(--colorSecundario);
 }
 
 .progress-bar{
@@ -102,7 +135,30 @@ footer ul{
 
 footer a{
     text-decoration: none;
-    color: white;
+    color: var(--colorBlanco);
+    transition: color .3s ease-out;
+}
+
+footer ul a:hover{
+    color: var(--colorPrincipal);
+}
+
+footer ul i{
+    color: var(--colorPrincipal);
+    transition: color .3s ease-out;
+}
+
+footer ul i:hover{
+    color: var(--colorBlanco);
+}
+
+footer span{
+    color: var(--colorBlanco);
+    font-weight: 500;
+}
+
+.altoFalso{
+    padding-top: 200px;
 }
 
 /* PANTALLAS MEDIANAS */
